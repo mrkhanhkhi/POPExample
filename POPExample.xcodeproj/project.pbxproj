@@ -14,6 +14,8 @@
 		C672C72B1E66CE0000C4DEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C672C7291E66CE0000C4DEB1 /* LaunchScreen.storyboard */; };
 		C672C7361E66CE0000C4DEB1 /* POPExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672C7351E66CE0000C4DEB1 /* POPExampleTests.swift */; };
 		C672C7411E66CE0000C4DEB1 /* POPExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672C7401E66CE0000C4DEB1 /* POPExampleUITests.swift */; };
+		C672C74F1E66CED900C4DEB1 /* BuzzableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672C74E1E66CED900C4DEB1 /* BuzzableButton.swift */; };
+		C672C7511E66CEE600C4DEB1 /* BuzzlableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C672C7501E66CEE600C4DEB1 /* BuzzlableLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C672C73C1E66CE0000C4DEB1 /* POPExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POPExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C672C7401E66CE0000C4DEB1 /* POPExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPExampleUITests.swift; sourceTree = "<group>"; };
 		C672C7421E66CE0000C4DEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C672C74E1E66CED900C4DEB1 /* BuzzableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuzzableButton.swift; sourceTree = "<group>"; };
+		C672C7501E66CEE600C4DEB1 /* BuzzlableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuzzlableLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				C672C7201E66CE0000C4DEB1 /* AppDelegate.swift */,
 				C672C7221E66CE0000C4DEB1 /* ViewController.swift */,
+				C672C74E1E66CED900C4DEB1 /* BuzzableButton.swift */,
+				C672C7501E66CEE600C4DEB1 /* BuzzlableLabel.swift */,
 				C672C7241E66CE0000C4DEB1 /* Main.storyboard */,
 				C672C7271E66CE0000C4DEB1 /* Assets.xcassets */,
 				C672C7291E66CE0000C4DEB1 /* LaunchScreen.storyboard */,
@@ -257,6 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C672C7231E66CE0000C4DEB1 /* ViewController.swift in Sources */,
+				C672C74F1E66CED900C4DEB1 /* BuzzableButton.swift in Sources */,
+				C672C7511E66CEE600C4DEB1 /* BuzzlableLabel.swift in Sources */,
 				C672C7211E66CE0000C4DEB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="POPExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C6-e7-Mge">
+                                <rect key="frame" x="131" y="448" width="339" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9P5-sd-j9m"/>
+                                    <constraint firstAttribute="width" constant="339" id="bx6-au-KzV"/>
+                                </constraints>
+                                <state key="normal" title="Press">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNV-Cg-qJa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSL-lW-2Pz">
+                                <rect key="frame" x="131" y="350" width="339" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aFN-6t-pUm"/>
+                                    <constraint firstAttribute="width" constant="339" id="eM9-R5-1mc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuG-72-CC2">
+                                <rect key="frame" x="131" y="407" width="339" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1OU-6D-5i8"/>
+                                    <constraint firstAttribute="width" constant="339" id="6R0-8T-jMB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KiO-Yv-LUt">
+                                <rect key="frame" x="180" y="124" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2Bg-FG-IHY"/>
+                                    <constraint firstAttribute="height" constant="128" id="acP-WC-3Pv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3C6-e7-Mge" firstAttribute="centerX" secondItem="JuG-72-CC2" secondAttribute="centerX" id="CGo-fo-dWf"/>
+                            <constraint firstItem="LSL-lW-2Pz" firstAttribute="centerX" secondItem="KiO-Yv-LUt" secondAttribute="centerX" id="L1I-jJ-CtR"/>
+                            <constraint firstItem="JuG-72-CC2" firstAttribute="centerX" secondItem="LSL-lW-2Pz" secondAttribute="centerX" id="Su4-6L-VPN"/>
+                            <constraint firstItem="LSL-lW-2Pz" firstAttribute="top" secondItem="KiO-Yv-LUt" secondAttribute="bottom" constant="98" id="awC-MP-vaQ"/>
+                            <constraint firstItem="3C6-e7-Mge" firstAttribute="top" secondItem="JuG-72-CC2" secondAttribute="bottom" constant="20" id="e1l-N0-fhE"/>
+                            <constraint firstItem="KiO-Yv-LUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZu-Ip-8oA"/>
+                            <constraint firstItem="JuG-72-CC2" firstAttribute="top" secondItem="LSL-lW-2Pz" secondAttribute="bottom" constant="27" id="kwi-z2-9TK"/>
+                            <constraint firstItem="KiO-Yv-LUt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="zLy-I2-dMs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorMessageLabel" destination="JuG-72-CC2" id="oVg-A2-srU"/>
+                        <outlet property="loginButton" destination="3C6-e7-Mge" id="GQA-Lv-EyF"/>
+                        <outlet property="passcodeTextfield" destination="LSL-lW-2Pz" id="8QW-3p-2I4"/>
+                        <outlet property="profileImgView" destination="KiO-Yv-LUt" id="6tC-E3-iOQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="136"/>
         </scene>
     </scenes>
 </document>
